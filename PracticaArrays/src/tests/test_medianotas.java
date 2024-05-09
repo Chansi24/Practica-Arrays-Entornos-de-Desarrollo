@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Test;
 import util.MisArrays;
 
 class test_medianotas {
+	
 	static int[]arraybueno;
 	static int[]arraymalo;	
 	@BeforeAll
