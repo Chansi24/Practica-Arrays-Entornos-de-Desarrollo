@@ -66,5 +66,25 @@ public abstract class MisArrays {
 				}
 			}
 		return max;
-		}                          
+		}
+	/**
+	 * 
+	 * @param notas
+	 * @return en primer lugar comprueba que las notas introducidas en el array estén entre 0 y 10,
+	 * después devuelve la menor nota de las existentes en el array
+	 */
+	public static int minimaNota(int[] notas) {
+		for (int i=0;i<notas.length;i++) {
+			if (notas[i]<0||notas[i]>10) {
+				 throw new IllegalArgumentException("Las notas deben estar entre 0 y 10");
+			}
+		}
+		int min = notas[0];
+		for (int nota : notas) {
+			if (nota < min) {
+				min = nota;
+				}
+			}
+		return min;
+		}
 }
